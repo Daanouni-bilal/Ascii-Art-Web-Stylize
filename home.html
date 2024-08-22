@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-Art-Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="leftBar">
+            <img src="/assets/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Generate</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="input">
+                <label for="input">write your input</label><br><br>
+            </div>
+            <!-- Main content goes here -->
+            <form action="/ascii-art" method="post">
+                <div class="test">
+                
+                <img src="/assets/arrow1.png" alt="arrow1" class="arrow">
+                    <textarea rows="5" cols="60" name="input" required></textarea>
+                <br>
+            </div>
+                <input type="radio" checked value="standard" name="banner">
+                <label for="standard">Standard</label>
+                <input type="radio" value="shadow" name="banner">
+                <label for="shadow">Shadow</label>
+                <input type="radio" value="thinkertoy" name="banner">
+                <label for="thinkertoy">Thinkertoy</label><br><br>
+                <button type="submit">Submit</button>
+                <p>You Art :</p>
+            </form>
+            <div align="left">
+                <pre> {{ . }} </pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-Art-Web</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+    <img src="/assets/logo.png" alt="logo">
+    <div class="header">
+        <nav>
+            <ul>
+            <li><a href="#">Generate</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+<div class="div">
+ 
+    <form action="/ascii-art" method="post">
+        <label for="input">write your input</label><br><br>
+        <textarea rows="5" cols="60" name="input" required></textarea>
+        <br>
+        <input type="radio" checked value="standard" name="banner">
+        <label for="standard">Standard</label>
+        <input type="radio" value="shadow" name="banner">
+        <label for="shadow">Shadow</label>
+        <input type="radio" value="thinkertoy" name="banner">
+        <label for="thinkertoy">Thinkertoy</label><br><br>
+        <button type="submit">Submit</button>
+        <p>You Art :</p>
+    </form>
+    <div align="left">
+        <pre> {{ . }} </pre>
+    </div>
+</div>
+</body>
+</html> -->

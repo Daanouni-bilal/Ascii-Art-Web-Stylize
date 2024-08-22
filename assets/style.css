@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: 'Kufam', sans-serif;
+}
+
+.main {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+.input{
+    font-size: large;
+}
+.arrow {
+    width: 90px; 
+    height: 63px; 
+    /* margin-right: 10px; */
+}
+textarea {
+    resize: none;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 19px;
+    height: 142px;
+    width: 1000px;
+}
+
+.leftBar {
+    background-color: #ffffff;
+    width: 150px; /* Fixed width for the sidebar */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.leftBar img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 20%;
+    margin-top: 70%;
+}
+
+nav li {
+    font-size: large;
+    margin-bottom: 50px; /* Space between items */
+}
+
+.content {
+    flex: 1; /* Takes up remaining space */
+    margin: 1% 1% 1% 0;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 19px;
+    background-color: #ECECEC; /* Background color for the main content */
+}
+
+.test{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
